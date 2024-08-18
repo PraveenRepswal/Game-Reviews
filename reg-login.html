@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration & Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h1>Game Reviews</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="user-auth.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="auth" class="auth-section">
+        <div class="container">
+            <div class="auth-forms">
+                <div class="form-wrapper">
+                    <h2>Register</h2>
+                    <form action="register" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+
+                <div class="form-wrapper">
+                    <h2>Login</h2>
+                    <form action="login" method="post">
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Game Reviews. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="additional-section">
+        <div class="container">
+            <h2>Welcome Back!</h2>
+            <p>Join our community of passionate gamers. Explore the latest reviews, share your thoughts, and stay updated with the gaming world.</p>
+            <h3>Why Register?</h3>
+            <ul>
+                <li>Personalized game recommendations</li>
+                <li>Access to exclusive content</li>
+                <li>Join discussions and forums</li>
+                <li>Submit your own game reviews</li>
+            </ul>
+            <h3>Need Help?</h3>
+            <p>If you have any issues with your account, feel free to <a href="contact.html">contact us</a> for support.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"This site has the best game reviews! Always my go-to before buying a new game."</p>
+                <p><strong>- Alex Johnson</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"I love the community here. Great discussions and very helpful members."</p>
+                <p><strong>- Sarah Lee</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Accurate and detailed reviews. Really helps me decide on which games to buy."</p>
+                <p><strong>- Michael Smith</strong></p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
