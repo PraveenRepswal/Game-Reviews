@@ -232,3 +232,100 @@ header nav ul li a {
 footer {
     margin-top: 30px;
 }
+
+h2 {
+    color: #e8491d;
+}
+
+.container {
+    background-color: #fdfdfd;
+}
+
+footer a:hover {
+    color: #f2f2f2;
+}
+
+.team-member {
+    border: 1px solid #ddd;
+}
+
+blockquote {
+    border-left: 5px solid #35424a;
+}
+
+footer {
+    background-color: #2c3e50;
+}
+
+#team {
+    border-top: 2px solid #ddd;
+}
+
+#values li {
+    border-left-color: #ccc;
+}
+
+h2, h3 {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+#values li {
+    text-align: left;
+}
+
+#testimonials blockquote {
+    text-align: left;
+}
+
+a:hover {
+    color: #555;
+}
+
+footer a:hover {
+    color: #c0392b;
+}
+
+.team-member:hover {
+    background-color: #f9f9f9;
+}
+
+#values ul li:hover {
+    background-color: #e0e0e0;
+}
+
+#testimonials blockquote:hover {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p, li, blockquote {
+    font-size: 18px;
+}
+
+header nav ul li a {
+    border: 1px solid transparent;
+    padding: 5px 15px;
+}
+
+header nav ul li a:hover {
+    border-color: #e8491d;
+}
+
+team-member {
+    border: 1px solid #e6e6e6;
+}
