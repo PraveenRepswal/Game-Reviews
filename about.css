@@ -107,3 +107,128 @@ section {
     background: #f4f4f4;
     padding: 20px;
 }
+
+#our-mission h2, #our-vision h2, #team h2, #history h2, #values h2, #testimonials h2, #careers h2, #community h2 {
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#team {
+    background-color: #f9f9f9;
+}
+
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+#history p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#values ul {
+    margin: 20px 0;
+}
+
+#values ul li {
+    font-size: 16px;
+    padding: 10px;
+    background: #e4e4e4;
+    margin-bottom: 10px;
+    border-left: 5px solid #e8491d;
+}
+
+#testimonials blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 20px;
+    background: #e4e4e4;
+    border-left: 10px solid #e8491d;
+}
+
+#careers p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#community p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #35424a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #e8491d;
+}
+
+#our-mission, #our-vision, #team, #history, #values, #testimonials, #careers, #community {
+    margin-bottom: 40px;
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+.team-member {
+    margin: 10px 0;
+}
+
+#history {
+    margin-bottom: 50px;
+}
+
+#values ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#testimonials {
+    margin-top: 30px;
+}
+
+blockquote {
+    border-left-color: #cccccc;
+}
+
+header ul {
+    margin-top: 10px;
+}
+
+header li {
+    padding: 10px 15px;
+}
+
+header nav ul li a {
+    padding: 5px;
+}
+
+footer {
+    margin-top: 30px;
+}
