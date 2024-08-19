@@ -207,3 +207,110 @@ footer p {
         margin-top: 20px;
     }
 }
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .sidebar h2 {
+        font-size: 1.3rem;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+    }
+
+    .mobile-game-title {
+        font-size: 1.3rem;
+    }
+
+    .mobile-game-description {
+        font-size: 0.9rem;
+    }
+
+    .favorite-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+.sidebar ul li a.active {
+    background-color: #bbb;
+}
+
+.mobile-game-entry:hover {
+    background-color: #e7e7e7;
+}
+
+.mobile-game-title:hover {
+    color: #555;
+}
+
+.latest-news ul li:hover {
+    color: #333;
+}
+
+.favorite-button.active {
+    background-color: #555;
+}
+
+.sidebar ul li a:active {
+    background-color: #999;
+}
+
+.mobile-game-entry:active {
+    background-color: #ddd;
+}
+
+.favorite-button:active {
+    background-color: #222;
+}
+
+.latest-news h2:active {
+    color: #222;
+}
+
+.latest-news ul li:active {
+    color: #444;
+}
+
+footer a {
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer a:active {
+    color: #aaa;
+}
+
+footer a:visited {
+    color: #bbb;
+}
+
+.sidebar ul li a:visited {
+    color: #666;
+}
+
+.mobile-game-title:visited {
+    color: #444;
+}
+
+.latest-news ul li:visited {
+    color: #666;
+}
+
+.favorite-button:visited {
+    color: #ddd;
+}
