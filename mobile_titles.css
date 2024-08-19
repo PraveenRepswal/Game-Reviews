@@ -314,3 +314,91 @@ footer a:visited {
 .favorite-button:visited {
     color: #ddd;
 }
+
+footer p:visited {
+    color: #eee;
+}
+
+.sidebar h2:visited {
+    color: #777;
+}
+
+.sidebar ul li a.active:visited {
+    color: #888;
+}
+
+.mobile-game-entry:visited {
+    background-color: #ccc;
+}
+
+.mobile-game-title.active {
+    color: #111;
+}
+
+.sidebar h2.active {
+    color: #222;
+}
+
+.sidebar ul li.active a {
+    background-color: #aaa;
+}
+
+.mobile-game-entry.active {
+    background-color: #999;
+}
+
+.latest-news h2.active {
+    color: #999;
+}
+
+.latest-news ul li.active {
+    color: #555;
+}
+
+footer a.active {
+    color: #888;
+}
+
+footer p.active {
+    color: #ddd;
+}
+
+.sidebar h2:hover {
+    color: #555;
+}
+
+.sidebar ul li.active:hover a {
+    background-color: #bbb;
+}
+
+.sidebar h2:active:hover {
+    color: #333;
+}
+
+.mobile-game-entry.active:hover {
+    background-color: #aaa;
+}
+
+.favorite-button.active:hover {
+    background-color: #333;
+}
+
+footer a.active:hover {
+    color: #ccc;
+}
+
+footer p.active:hover {
+    color: #eee;
+}
+
+.latest-news h2.active:hover {
+    color: #444;
+}
+
+.latest-news ul li.active:hover {
+    color: #666;
+}
+
+.sidebar h2:active:visited {
+    color: #888;
+}
