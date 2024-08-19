@@ -40,16 +40,58 @@ main {
 }
 
 .game-box {
-    background-color: #fff;
-    padding: 20px;
-    border: 2px solid #ddd;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
+.game-box:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(60deg, #f39c12, #e74c3c, #2ecc71, #3498db, #9b59b6, #e67e22);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.game-box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -2;
+    border-radius: inherit;
+    filter: blur(20px);
+}
+
+
 .game-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.game-box:hover:before {
+    opacity: 1;
+    filter: blur(10px);
+}
+
+.game-box:hover .game-image {
+    opacity: 0.9;
+    filter: brightness(1.2);
 }
 
 .game-image {
@@ -80,10 +122,19 @@ main {
 .game-box:nth-child(18) .game-image { background-color: #27ae60; }
 
 .game-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    animation: glowing 1.5s infinite alternate;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
+
 
 .game-description {
     font-size: 1rem;
@@ -102,6 +153,21 @@ footer {
     background-color: #222;
     color: #fff;
     margin-top: 40px;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px #f39c12, 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12;
+        color: #f39c12;
+    }
+    50% {
+        text-shadow: 0 0 15px #e74c3c, 0 0 25px #e74c3c, 0 0 35px #e74c3c, 0 0 45px #e74c3c;
+        color: #e74c3c;
+    }
+    100% {
+        text-shadow: 0 0 5px #2ecc71, 0 0 10px #2ecc71, 0 0 20px #2ecc71, 0 0 30px #2ecc71;
+        color: #2ecc71;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -196,6 +262,36 @@ footer p {
     color: #f39c12;
     text-decoration: underline;
 }
+
+/* I asked this part from AI ----------------- */
+
+.game-box:nth-child(odd) .game-image {
+    background: linear-gradient(135deg, #e74c3c, #9b59b6);
+}
+
+.game-box:nth-child(even) .game-image {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+}
+
+.game-box:active {
+    transform: scale(0.98);
+    border-color: #f1c40f;
+    background-color: #f9f9f9;
+}
+
+.game-title:hover {
+    color: #fff;
+    text-shadow: 0 0 30px #3498db, 0 0 40px #9b59b6, 0 0 50px #e67e22;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+}
+
+footer p {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* -----------------------*/
 
 .game-description:hover {
     color: #e74c3c;
