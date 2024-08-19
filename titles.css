@@ -212,3 +212,101 @@ footer p {
 .game-box {
     transform-origin: center;
 }
+
+.game-box:hover {
+    transform: rotate(3deg);
+}
+
+footer {
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.games-grid {
+    grid-gap: 30px;
+}
+
+.game-title {
+    line-height: 1.2;
+}
+
+footer {
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .game-title {
+        font-size: 0.95rem;
+    }
+
+    .game-description {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+.game-box:active {
+    transform: scale(0.95);
+    background-color: #f1f1f1;
+}
+
+.game-box:hover .game-image {
+    opacity: 0.8;
+}
+
+.game-title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game-description {
+    font-family: 'Georgia', serif;
+}
+
+header h1 {
+    font-family: 'Verdana', sans-serif;
+}
+
+footer p {
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    background-color: #444;
+}
+
+footer p:hover {
+    color: #ccc;
+}
+
+@media (max-width: 960px) {
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
+
+    .game-box {
+        padding: 18px;
+    }
+
+    .game-title {
+        font-size: 1.15rem;
+    }
+
+    .game-description {
+        font-size: 0.95rem;
+    }
+}
+
+.game-box:hover .game-title {
+    color: #e74c3c;
+}
