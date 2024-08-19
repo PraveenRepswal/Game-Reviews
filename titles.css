@@ -310,3 +310,113 @@ footer p:hover {
 .game-box:hover .game-title {
     color: #e74c3c;
 }
+
+.game-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+header h1 {
+    text-shadow: 2px 2px #555;
+}
+
+footer {
+    border-radius: 5px;
+}
+
+footer p {
+    text-shadow: 1px 1px #222;
+}
+
+.game-description {
+    text-align: justify;
+}
+
+.game-title:hover {
+    text-shadow: 1px 1px #222;
+}
+
+.game-box {
+    border-left: 5px solid #ddd;
+}
+
+.game-box:hover {
+    border-left: 5px solid #3498db;
+}
+
+.game-box {
+    border-right: 5px solid #ddd;
+}
+
+.game-box:hover {
+    border-right: 5px solid #e74c3c;
+}
+
+.game-box:hover {
+    background-color: #f9f9f9;
+}
+
+header h1 {
+    padding-bottom: 15px;
+}
+
+header {
+    border-radius: 8px;
+}
+
+footer {
+    padding-top: 25px;
+}
+
+footer {
+    text-align: left;
+    padding-left: 15px;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer {
+    border-bottom: 2px solid #555;
+}
+
+footer p {
+    padding-bottom: 10px;
+}
+
+footer p {
+    line-height: 1.4;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer p:hover {
+    text-shadow: 2px 2px #555;
+}
+
+header h1:hover {
+    text-shadow: 3px 3px #777;
+}
+
+header {
+    padding-bottom: 30px;
+}
+
+footer p {
+    font-weight: 500;
+}
+
+header h1 {
+    font-weight: 900;
+}
