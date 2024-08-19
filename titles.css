@@ -103,3 +103,112 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+
+@media (max-width: 1200px) {
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .game-box {
+        padding: 15px;
+    }
+
+    .game-image {
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-box {
+        padding: 10px;
+    }
+
+    .game-image {
+        height: 100px;
+    }
+
+    .game-title {
+        font-size: 1rem;
+    }
+
+    .game-description {
+        font-size: 0.9rem;
+    }
+
+    .game-rating {
+        font-size: 1rem;
+    }
+}
+
+.game-box:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.game-box {
+    position: relative;
+}
+
+.game-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+footer {
+    border-top: 3px solid #555;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.game-title:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+.game-description:hover {
+    color: #e74c3c;
+}
+
+.game-rating span:nth-child(2) {
+    font-weight: bold;
+}
+
+.game-rating span:nth-child(2):hover {
+    color: #3498db;
+}
+
+.game-box {
+    transform-origin: center;
+}
