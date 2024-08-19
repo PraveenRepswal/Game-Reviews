@@ -1,0 +1,105 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #222;
+    padding: 10px;
+    border-bottom: 2px solid #555;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.game-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.game-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.game-box:nth-child(1) .game-image { background-color: #f39c12; }
+.game-box:nth-child(2) .game-image { background-color: #e74c3c; }
+.game-box:nth-child(3) .game-image { background-color: #2ecc71; }
+.game-box:nth-child(4) .game-image { background-color: #3498db; }
+.game-box:nth-child(5) .game-image { background-color: #9b59b6; }
+.game-box:nth-child(6) .game-image { background-color: #e67e22; }
+.game-box:nth-child(7) .game-image { background-color: #1abc9c; }
+.game-box:nth-child(8) .game-image { background-color: #e84393; }
+.game-box:nth-child(9) .game-image { background-color: #d35400; }
+.game-box:nth-child(10) .game-image { background-color: #8e44ad; }
+.game-box:nth-child(11) .game-image { background-color: #c0392b; }
+.game-box:nth-child(12) .game-image { background-color: #16a085; }
+.game-box:nth-child(13) .game-image { background-color: #27ae60; }
+.game-box:nth-child(14) .game-image { background-color: #2980b9; }
+.game-box:nth-child(15) .game-image { background-color: #e74c3c; }
+.game-box:nth-child(16) .game-image { background-color: #f39c12; }
+.game-box:nth-child(17) .game-image { background-color: #8e44ad; }
+.game-box:nth-child(18) .game-image { background-color: #27ae60; }
+
+.game-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.game-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.game-rating {
+    font-size: 1.1rem;
+    color: #f1c40f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 40px;
+}
