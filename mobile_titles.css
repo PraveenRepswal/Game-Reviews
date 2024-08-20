@@ -402,3 +402,118 @@ footer p.active:hover {
 .sidebar h2:active:visited {
     color: #888;
 }
+
+.sidebar ul li.active:visited a {
+    background-color: #bbb;
+}
+
+footer a.active:visited {
+    color: #aaa;
+}
+
+footer p.active:visited {
+    color: #ccc;
+}
+
+.sidebar ul li.active:active a {
+    background-color: #666;
+}
+
+footer a.active:active {
+    color: #444;
+}
+
+footer p.active:active {
+    color: #555;
+}
+
+.latest-news h2.active:active {
+    color: #666;
+}
+
+.latest-news ul li.active:active {
+    color: #777;
+}
+
+.sidebar ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #444;
+}
+
+.mobile-game-entry:focus-within {
+    background-color: #eee;
+}
+
+.mobile-game-title:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.favorite-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #444;
+}
+
+.latest-news ul li:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+footer a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #444;
+}
+
+footer p:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.sidebar h2:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.sidebar ul li a:focus-visible {
+    background-color: #bbb;
+}
+
+.mobile-game-entry:focus-visible {
+    background-color: #e7e7e7;
+}
+
+.mobile-game-title:focus-visible {
+    color: #555;
+}
+
+.latest-news ul li:focus-visible {
+    color: #333;
+}
+
+.favorite-button:focus-visible {
+    background-color: #555;
+}
+
+footer a:focus-visible {
+    color: #aaa;
+}
+
+footer p:focus-visible {
+    color: #ccc;
+}
+
+.sidebar h2:focus-visible {
+    color: #555;
+}
+
+.sidebar ul li a:hover:focus {
+    background-color: #ccc;
+}
+
+.mobile-game-entry:hover:focus-within {
+    background-color: #f0f0f0;
+}
+
+.mobile-game-title:hover:focus {
+    color: #444;
+}
