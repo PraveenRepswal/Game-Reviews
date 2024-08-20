@@ -638,3 +638,87 @@ header h1 {
 section h2 {
     font-size: 2.5rem;
 }
+
+section h3 {
+    font-size: 2rem;
+}
+
+section ul li h4 {
+    font-size: 1.55rem;
+}
+
+section ul li p {
+    font-size: 1.25rem;
+}
+
+footer p {
+    font-size: 1.25rem;
+}
+
+footer p a {
+    font-size: 1.35rem;
+}
+
+footer p a:hover {
+    border-bottom: 7px solid #ffcc00;
+}
+
+section ul li:hover {
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.9);
+}
+
+header nav ul li a {
+    padding: 25px 30px;
+}
+
+main {
+    margin-top: 55px;
+}
+
+header {
+    padding-top: 55px;
+}
+
+footer {
+    padding-top: 55px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+}
+
+section h2 {
+    font-size: 2.6rem;
+}
+
+section h3 {
+    font-size: 2.1rem;
+}
+
+section ul li h4 {
+    font-size: 1.6rem;
+}
+
+section ul li p {
+    font-size: 1.3rem;
+}
+
+footer p {
+    font-size: 1.3rem;
+}
+
+footer p a {
+    font-size: 1.4rem;
+}
+
+footer p a:hover {
+    border-bottom: 8px solid #ffcc00;
+}
+
+section ul li:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+
+header nav ul li a {
+    padding: 27px 32px;
+}
