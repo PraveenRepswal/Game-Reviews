@@ -448,3 +448,97 @@ section h3 {
 section ul li h4 {
     font-size: 1.4rem;
 }
+
+footer p a:hover {
+    border-bottom: 3px solid #ffcc00;
+}
+
+section ul li:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+    padding: 17px 22px;
+}
+
+main {
+    margin-top: 35px;
+}
+
+header {
+    padding-top: 35px;
+}
+
+footer {
+    padding-top: 35px;
+}
+
+header h1 {
+    font-size: 2.9rem;
+}
+
+section h2 {
+    font-size: 2.2rem;
+}
+
+section h3 {
+    font-size: 1.7rem;
+}
+
+section ul li h4 {
+    font-size: 1.4rem;
+}
+
+section ul li p {
+    font-size: 1.1rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer p a {
+    font-size: 1.2rem;
+}
+
+footer p a:hover {
+    border-bottom: 4px solid #ffcc00;
+}
+
+section ul li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+header nav ul li a {
+    padding: 19px 24px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+header {
+    padding-top: 40px;
+}
+
+footer {
+    padding-top: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+section h2 {
+    font-size: 2.3rem;
+}
+
+section h3 {
+    font-size: 1.8rem;
+}
+
+section ul li h4 {
+    font-size: 1.45rem;
+}
+
+/* There is some chance that few lines or a few code block may get repeated in game_events.css because I am working in another file and at the end of 1 hr I paste the code written by me in that file to this file. */
