@@ -195,3 +195,108 @@ header nav ul li a::after {
     left: 0;
     bottom: -5px;
 }
+
+header {
+    background-color: #282828;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+section ul li {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+section h3 {
+    position: relative;
+}
+
+section h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 4px;
+    background-color: #ffcc00;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+}
+
+header nav ul li:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+section ul li h4 {
+    position: relative;
+    padding-left: 20px;
+}
+
+section ul li h4::before {
+    content: '🎮';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.2rem;
+}
+
+section ul li h4:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-image: linear-gradient(135deg, #222 25%, #1e1e1e 75%);
+}
+
+header {
+    background-image: linear-gradient(135deg, #3a3a3a 25%, #333 75%);
+}
+
+footer {
+    background-image: linear-gradient(135deg, #3a3a3a 25%, #333 75%);
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section ul li h4 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
