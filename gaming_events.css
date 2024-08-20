@@ -356,3 +356,51 @@ section ul li {
 header h1 {
     padding: 10px 0;
 }
+
+header nav ul li a {
+    padding: 15px 20px;
+}
+
+header nav ul {
+    gap: 20px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+header {
+    padding-top: 30px;
+}
+
+footer {
+    padding-top: 30px;
+}
+
+header h1 {
+    font-size: 2.7rem;
+}
+
+section h2 {
+    font-size: 2.1rem;
+}
+
+section h3 {
+    font-size: 1.6rem;
+}
+
+section ul li h4 {
+    font-size: 1.35rem;
+}
+
+section ul li p {
+    font-size: 1.05rem;
+}
+
+footer p {
+    font-size: 1.05rem;
+}
+
+footer p a {
+    font-size: 1.15rem;
+}
