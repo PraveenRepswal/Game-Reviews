@@ -517,3 +517,35 @@ footer p:focus-visible {
 .mobile-game-title:hover:focus {
     color: #444;
 }
+
+.latest-news ul li:hover:focus {
+    color: #222;
+}
+
+.favorite-button:hover:focus {
+    background-color: #666;
+}
+
+footer a:hover:focus {
+    color: #888;
+}
+
+footer p:hover:focus {
+    color: #ddd;
+}
+
+.sidebar h2:hover:focus {
+    color: #666;
+}
+
+.sidebar ul li a:hover:focus-visible {
+    background-color: #ddd;
+}
+
+.mobile-game-entry:hover:focus-visible {
+    background-color: #e0e0e0;
+}
+
+.mobile-game-title:hover:focus-visible {
+    color: #333;
+}
