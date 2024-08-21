@@ -284,3 +284,46 @@ header p {
     color: #444;
     margin-bottom: 31px;
 }
+
+.category {
+    margin-bottom: 52px;
+    padding-bottom: 32px;
+    border-bottom: 3px solid #ddd;
+}
+
+.category h3 {
+    font-size: 29px;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.category p {
+    font-size: 19px;
+    color: #666;
+    margin-bottom: 21px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding-left: 21px;
+}
+
+    /* Remember to check the color after writing more CSS */
+    /* If the grey color doesn't look good, then I should use black*/
+
+.category ul li {
+    font-size: 21px;
+    margin-bottom: 11px;
+    color: #555;
+}
+
+.category ul li::before {
+    content: "• ";
+    font-size: 27px;
+    color: #888;
+}
+
+.category ul li::marker {
+    font-size: 27px;
+    color: #888;
+}
