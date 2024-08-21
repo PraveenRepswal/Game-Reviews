@@ -393,3 +393,89 @@ header p {
     color: #888;
 }
 
+.special-award ul li span {
+    font-size: 27px;
+    vertical-align: middle;
+}
+
+.special-award ul li span.emoji {
+    font-size: 33px;
+    vertical-align: middle;
+}
+
+.special-award ul li span.emoji-large {
+    font-size: 39px;
+    vertical-align: middle;
+}
+
+.overview p:first-letter {
+    font-size: 31px;
+    font-weight: bold;
+    color: #333;
+}
+
+header h1:first-letter {
+    font-size: 51px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.categories h2:first-letter {
+    font-size: 43px;
+    font-weight: bold;
+    color: #666;
+}
+
+.special-awards h2:first-letter {
+    font-size: 43px;
+    font-weight: bold;
+    color: #666;
+}
+
+header h1:last-letter {
+    font-size: 51px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.overview h2:last-letter {
+    font-size: 39px;
+    font-weight: bold;
+    color: #333;
+}
+
+.category h3:last-letter {
+    font-size: 33px;
+    font-weight: bold;
+    color: #444;
+}
+
+.special-award h3:last-letter {
+    font-size: 33px;
+    font-weight: bold;
+    color: #444;
+}
+
+.category ul li:hover {
+    color: #333;
+}
+
+.special-award ul li:hover {
+    color: #333;
+}
+
+.overview p:hover {
+    color: #444;
+}
+
+header h1:hover {
+    color: #ccc;
+}
+
+.categories h2:hover {
+    color: #333;
+}
+
+.special-awards h2:hover {
+    color: #333;
+}
