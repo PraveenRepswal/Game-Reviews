@@ -327,3 +327,69 @@ header p {
     font-size: 27px;
     color: #888;
 }
+.category ul li span {
+    font-size: 27px;
+    vertical-align: middle;
+}
+
+.category ul li span.emoji {
+    font-size: 31px;
+    vertical-align: middle;
+}
+
+.category ul li span.emoji-large {
+    font-size: 37px;
+    vertical-align: middle;
+}
+
+.special-awards {
+    background-color: #f9f9f9;
+    padding: 52px;
+}
+
+.special-awards h2 {
+    font-size: 35px;
+    color: #444;
+    margin-bottom: 31px;
+}
+
+.special-award {
+    margin-bottom: 52px;
+    padding-bottom: 32px;
+    border-bottom: 3px solid #ddd;
+}
+
+.special-award h3 {
+    font-size: 29px;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.special-award p {
+    font-size: 19px;
+    color: #666;
+    margin-bottom: 21px;
+}
+
+.special-award ul {
+    list-style-type: none;
+    padding-left: 21px;
+}
+
+.special-award ul li {
+    font-size: 21px;
+    margin-bottom: 11px;
+    color: #555;
+}
+
+.special-award ul li::before {
+    content: "• ";
+    font-size: 27px;
+    color: #888;
+}
+
+.special-award ul li::marker {
+    font-size: 27px;
+    color: #888;
+}
+
