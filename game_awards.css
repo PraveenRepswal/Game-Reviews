@@ -579,3 +579,110 @@ header p:hover {
 }
 
 /* Used VS code format option to decorate the code */
+
+header h1:first-letter {
+    font-size: 52px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+header p:first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+header p:last-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #eee;
+}
+
+header p:hover {
+    color: #ccc;
+}
+
+.special-award p:last-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+}
+
+.special-award ul li:hover {
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-size: 47px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 23px;
+    margin-top: 7px;
+}
+
+.overview {
+    background-color: #e6e6e6;
+    padding: 43px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.overview h2 {
+    font-size: 35px;
+    color: #333;
+}
+
+.overview p {
+    font-size: 23px;
+    line-height: 1.75;
+    color: #555;
+}
+
+.categories {
+    background-color: #ffffff;
+    padding: 54px;
+}
+
+.categories h2 {
+    font-size: 37px;
+    color: #444;
+    margin-bottom: 32px;
+}
+
+.category {
+    margin-bottom: 54px;
+    padding-bottom: 34px;
+    border-bottom: 3px solid #ddd;
+}
+
+.category h3 {
+    font-size: 31px;
+    color: #222;
+    margin-bottom: 17px;
+}
+
+.category p {
+    font-size: 21px;
+    color: #666;
+    margin-bottom: 23px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding-left: 23px;
+}
+
+.category ul li {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #555;
+}
