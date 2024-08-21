@@ -96,3 +96,98 @@ header p {
     font-size: 30px;
     vertical-align: middle;
 }
+
+.category ul li span.emoji-large {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+.special-awards {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.special-awards h2 {
+    font-size: 34px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.special-award {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ddd;
+}
+
+.special-award h3 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.special-award p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.special-award ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.special-award ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.special-award ul li::before {
+    content: "• ";
+    font-size: 26px;
+    color: #888;
+}
+
+.special-award ul li::marker {
+    font-size: 26px;
+    color: #888;
+}
+
+.special-award ul li span {
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.special-award ul li span.emoji {
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.special-award ul li span.emoji-large {
+    font-size: 38px;
+    vertical-align: middle;
+}
+
+.overview p:first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+header h1:first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.categories h2:first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    color: #666;
+}
+
+.special-awards h2:first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    color: #666;
+}
