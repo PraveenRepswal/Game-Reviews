@@ -479,3 +479,103 @@ header h1:hover {
 .special-awards h2:hover {
     color: #333;
 }
+
+.category ul li span:hover {
+    color: #444;
+}
+
+.special-award ul li span:hover {
+    color: #444;
+}
+
+.overview h2:hover {
+    color: #555;
+}
+
+header p:hover {
+    color: #eee;
+}
+
+header p:last-letter {
+    font-size: 26px;
+    font-weight: bold;
+    color: #eee;
+}
+
+.overview h2:last-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.overview p:last-letter {
+    font-size: 26px;
+    font-weight: bold;
+    color: #666;
+}
+
+.categories h2:last-letter {
+    font-size: 44px;
+    font-weight: bold;
+    color: #666;
+}
+
+.special-awards h2:last-letter {
+    font-size: 44px;
+    font-weight: bold;
+    color: #666;
+}
+
+.special-award h3:last-letter {
+    font-size: 34px;
+    font-weight: bold;
+    color: #444;
+}
+
+header p:last-letter {
+    font-size: 27px;
+    font-weight: bold;
+    color: #eee;
+}
+
+header h1:hover {
+    color: #ccc;
+}
+
+.overview h2:hover {
+    color: #666;
+}
+
+.categories h2:hover {
+    color: #444;
+}
+
+.special-awards h2:hover {
+    color: #444;
+}
+
+header p:hover {
+    color: #eee;
+}
+
+.special-awards p:hover {
+    color: #666;
+}
+
+.special-award p:hover {
+    color: #666;
+}
+
+.category ul li::before {
+    content: "★ ";
+    font-size: 30px;
+    color: #888;
+}
+
+.special-award ul li::before {
+    content: "★ ";
+    font-size: 30px;
+    color: #888;
+}
+
+/* Used VS code format option to decorate the code */
