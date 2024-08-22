@@ -686,3 +686,97 @@ header p {
     margin-bottom: 12px;
     color: #555;
 }
+
+.category ul li::before {
+    content: "★ ";
+    font-size: 32px;
+    color: #888;
+}
+
+.category ul li::marker {
+    font-size: 32px;
+    color: #888;
+}
+
+.category ul li span {
+    font-size: 29px;
+    vertical-align: middle;
+}
+
+.category ul li span.emoji {
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.category ul li span.emoji-large {
+    font-size: 41px;
+    vertical-align: middle;
+}
+
+.special-awards {
+    background-color: #f9f9f9;
+    padding: 54px;
+}
+
+.special-awards h2 {
+    font-size: 37px;
+    color: #444;
+    margin-bottom: 32px;
+}
+
+.special-award {
+    margin-bottom: 54px;
+    padding-bottom: 34px;
+    border-bottom: 3px solid #ddd;
+}
+
+.special-award h3 {
+    font-size: 31px;
+    color: #222;
+    margin-bottom: 17px;
+}
+
+.special-award p {
+    font-size: 21px;
+    color: #666;
+    margin-bottom: 23px;
+}
+
+.special-award ul {
+    list-style-type: none;
+    padding-left: 23px;
+}
+
+.special-award ul li {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.special-award ul li::before {
+    content: "★ ";
+    font-size: 32px;
+    color: #888;
+}
+
+.special-award ul li::marker {
+    font-size: 32px;
+    color: #888;
+}
+
+.special-award ul li span {
+    font-size: 29px;
+    vertical-align: middle;
+}
+
+.special-award ul li span.emoji {
+    font-size: 37px;
+    vertical-align: middle;
+}
+
+.special-award ul li span.emoji-large {
+    font-size: 43px;
+    vertical-align: middle;
+}
+
+/* Completed the CSS of game awards page */
