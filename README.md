@@ -75,4 +75,15 @@ Email: xxxxxxxxxxxx@dummy.com
 
 Twitter: @xxxxxxxxxxxx
 
-***For Images and Screenshots, navigate to the Screenshots folder in this repo***
+***To exeperience the website live click om the link below***
+**Link:**  https://praveenrepswal.github.io/Game-Reviews/
+
+---
+**Images**
+
+![Screenshot 2024-08-22 163343](https://github.com/user-attachments/assets/4b33f0cc-6caa-4f0f-a73a-235622531525)
+![Screenshot 2024-08-22 162304](https://github.com/user-attachments/assets/f280a2a1-661a-4eec-98b8-0ac5a19db382)
+![Screenshot 2024-08-22 121721](https://github.com/user-attachments/assets/bd8218db-4f4b-4f4b-ae64-4941e3c1a04f)
+![Screenshot 2024-08-22 121539](https://github.com/user-attachments/assets/2cf74c97-ef6e-4e37-af5e-3dea200c98f6)
+![Screenshot 2024-08-22 122419](https://github.com/user-attachments/assets/d29d5dc9-e5ab-4f73-adaa-ef20e52eb698)
+![Screenshot 2024-08-22 122402](https://github.com/user-attachments/assets/8e7f9160-01ef-466a-a426-c2fd8a720647)
