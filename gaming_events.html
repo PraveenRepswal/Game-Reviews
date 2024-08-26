@@ -3,268 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Events Calendar</title>
+    <title>Ultimate Gaming Events 2024</title>
     <link rel="stylesheet" href="gaming_events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Gaming Events Calendar</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">PC/Console Events</a></li>
-                <li><a href="#">Mobile Events</a></li>
-                <li><a href="#">All Events</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>PC/Console Games Events</h2>
-            <div>
-                <h3>August 2024</h3>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Ultimate Gaming Events 2024</h1>
+            </div>
+            <nav class="main-nav">
                 <ul>
-                    <li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="titles.html">Games</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="subscribe.html" class="cta-button">Subscribe</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Your Ultimate Guide to 2024 Gaming Events</h2>
+                <p>Explore the latest events, tournaments, and conventions happening around the globe. Don't miss out on the excitement!</p>
+                <a href="#events" class="hero-button">Explore Events</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/Xb.jpg" alt="Gaming Event" />
+            </div>
+        </div>
+    </section>
+
+    <section class="events-section" id="events">
+        <div class="container">
+            <h2>Featured Events</h2>
+
+            <div class="event-category">
+                <h3>PC/Console Games Events</h3>
+                <div class="event-list">
+                    <div class="event-card">
                         <h4>Game Fest 2024</h4>
                         <p>Date: August 5, 2024</p>
                         <p>Location: New York City</p>
                         <p>Description: A major event showcasing upcoming PC and console games.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Esports Championship</h4>
                         <p>Date: August 12, 2024</p>
                         <p>Location: Los Angeles</p>
                         <p>Description: A grand tournament featuring the top esports teams worldwide.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>RPG Con 2024</h4>
                         <p>Date: August 19, 2024</p>
                         <p>Location: Chicago</p>
                         <p>Description: The ultimate event for RPG lovers, with panels, games, and more.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Adventure Games Expo</h4>
                         <p>Date: August 26, 2024</p>
                         <p>Location: San Diego</p>
                         <p>Description: A deep dive into the latest adventure games with live demos.</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>September 2024</h3>
-                <ul>
-                    <li>
-                        <h4>Action Games Expo</h4>
-                        <p>Date: September 3, 2024</p>
-                        <p>Location: San Francisco</p>
-                        <p>Description: Discover the latest in action games, with live demos and reveals.</p>
-                    </li>
-                    <li>
-                        <h4>Indie Game Showdown</h4>
-                        <p>Date: September 10, 2024</p>
-                        <p>Location: Boston</p>
-                        <p>Description: A celebration of indie games, featuring competitions and showcases.</p>
-                    </li>
-                    <li>
-                        <h4>Retro Gaming Convention</h4>
-                        <p>Date: September 17, 2024</p>
-                        <p>Location: Seattle</p>
-                        <p>Description: A trip down memory lane with retro games and classic consoles.</p>
-                    </li>
-                    <li>
-                        <h4>VR World 2024</h4>
-                        <p>Date: September 24, 2024</p>
-                        <p>Location: Las Vegas</p>
-                        <p>Description: Experience the latest in virtual reality gaming technology.</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>October 2024</h3>
-                <ul>
-                    <li>
-                        <h4>Horror Games Week</h4>
-                        <p>Date: October 1-7, 2024</p>
-                        <p>Location: New Orleans</p>
-                        <p>Description: A spooky week filled with horror game previews and events.</p>
-                    </li>
-                    <li>
-                        <h4>FPS Showdown</h4>
-                        <p>Date: October 15, 2024</p>
-                        <p>Location: Houston</p>
-                        <p>Description: The ultimate event for fans of first-person shooters.</p>
-                    </li>
-                    <li>
-                        <h4>Open World Expo</h4>
-                        <p>Date: October 22, 2024</p>
-                        <p>Location: Denver</p>
-                        <p>Description: Explore new open-world games and meet developers.</p>
-                    </li>
-                    <li>
-                        <h4>Platformer Paradise</h4>
-                        <p>Date: October 30, 2024</p>
-                        <p>Location: Portland</p>
-                        <p>Description: A celebration of classic and modern platformer games.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Mobile Games Events</h2>
-            <div>
-                <h3>August 2024</h3>
-                <ul>
-                    <li>
+
+            <div class="event-category">
+                <h3>Mobile Games Events</h3>
+                <div class="event-list">
+                    <div class="event-card">
                         <h4>Mobile Masters Tournament</h4>
                         <p>Date: August 7, 2024</p>
                         <p>Location: Miami</p>
                         <p>Description: The best mobile gamers compete for the title of Mobile Master.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>AR Game Jam</h4>
                         <p>Date: August 14, 2024</p>
                         <p>Location: Austin</p>
                         <p>Description: A hackathon focused on creating innovative AR mobile games.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Mobile Strategy Summit</h4>
                         <p>Date: August 21, 2024</p>
                         <p>Location: Orlando</p>
                         <p>Description: A summit dedicated to strategy games in the mobile gaming space.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Casual Gaming Meetup</h4>
                         <p>Date: August 28, 2024</p>
                         <p>Location: Tampa</p>
                         <p>Description: A relaxed gathering for fans of casual and puzzle mobile games.</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>September 2024</h3>
-                <ul>
-                    <li>
-                        <h4>Battle Royale Bash</h4>
-                        <p>Date: September 6, 2024</p>
-                        <p>Location: Las Vegas</p>
-                        <p>Description: A massive event focusing on the hottest battle royale mobile games.</p>
-                    </li>
-                    <li>
-                        <h4>Puzzle Game Party</h4>
-                        <p>Date: September 15, 2024</p>
-                        <p>Location: Phoenix</p>
-                        <p>Description: Join puzzle enthusiasts for a day of challenging and fun games.</p>
-                    </li>
-                    <li>
-                        <h4>Mobile MOBA Madness</h4>
-                        <p>Date: September 23, 2024</p>
-                        <p>Location: Atlanta</p>
-                        <p>Description: Compete in or watch exciting MOBA matches featuring top mobile games.</p>
-                    </li>
-                    <li>
-                        <h4>Mobile RPG Expo</h4>
-                        <p>Date: September 30, 2024</p>
-                        <p>Location: Dallas</p>
-                        <p>Description: Discover new RPGs designed specifically for mobile platforms.</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>October 2024</h3>
-                <ul>
-                    <li>
-                        <h4>Halloween Horror Bash</h4>
-                        <p>Date: October 5, 2024</p>
-                        <p>Location: Salem</p>
-                        <p>Description: Celebrate Halloween with spooky mobile games and prizes.</p>
-                    </li>
-                    <li>
-                        <h4>Idle Games Expo</h4>
-                        <p>Date: October 13, 2024</p>
-                        <p>Location: Nashville</p>
-                        <p>Description: A showcase of the most popular idle and incremental games.</p>
-                    </li>
-                    <li>
-                        <h4>Interactive Storytelling Event</h4>
-                        <p>Date: October 20, 2024</p>
-                        <p>Location: Raleigh</p>
-                        <p>Description: Explore the future of interactive storytelling in mobile games.</p>
-                    </li>
-                    <li>
-                        <h4>Mobile Racing Mania</h4>
-                        <p>Date: October 28, 2024</p>
-                        <p>Location: Indianapolis</p>
-                        <p>Description: A high-octane event for fans of mobile racing games.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Additional Gaming Events</h2>
-            <div>
-                <h3>November 2024</h3>
-                <ul>
-                    <li>
+
+            <div class="event-category">
+                <h3>Additional Gaming Events</h3>
+                <div class="event-list">
+                    <div class="event-card">
                         <h4>Winter Game Fest</h4>
                         <p>Date: November 10, 2024</p>
                         <p>Location: Toronto</p>
                         <p>Description: A festival celebrating all things gaming, from PC to mobile.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Indie Game Weekend</h4>
                         <p>Date: November 17, 2024</p>
                         <p>Location: San Jose</p>
                         <p>Description: A weekend dedicated to the indie game community.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Global Esports Finals</h4>
                         <p>Date: November 24, 2024</p>
                         <p>Location: Tokyo</p>
                         <p>Description: The final showdown for the world’s top esports teams.</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="event-card">
                         <h4>Strategy Game Symposium</h4>
                         <p>Date: November 30, 2024</p>
                         <p>Location: London</p>
                         <p>Description: A symposium focused on the latest trends in strategy gaming.</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>December 2024</h3>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Sign up for our newsletter to receive the latest updates on gaming events straight to your inbox.</p>
+            <a href="subscribe.html" class="cta-button">Subscribe Now</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 Ultimate Gaming Events. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
                 <ul>
-                    <li>
-                        <h4>Holiday Gaming Expo</h4>
-                        <p>Date: December 7, 2024</p>
-                        <p>Location: Vancouver</p>
-                        <p>Description: A holiday-themed gaming expo with something for everyone.</p>
-                    </li>
-                    <li>
-                        <h4>RPG Winterfest</h4>
-                        <p>Date: December 14, 2024</p>
-                        <p>Location: Berlin</p>
-                        <p>Description: An event for RPG fans to celebrate the winter season.</p>
-                    </li>
-                    <li>
-                        <h4>Year-End Game Awards</h4>
-                        <p>Date: December 21, 2024</p>
-                        <p>Location: Paris</p>
-                        <p>Description: A prestigious awards ceremony recognizing the best games of the year.</p>
-                    </li>
-                    <li>
-                        <h4>New Year’s Game Party</h4>
-                        <p>Date: December 31, 2024</p>
-                        <p>Location: Sydney</p>
-                        <p>Description: Ring in the new year with games, prizes, and fun.</p>
-                    </li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Gaming Events Calendar. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="contact.html">Contact Us</a></p>
+        </div>
     </footer>
 </body>
 </html>
