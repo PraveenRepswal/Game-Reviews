@@ -108,3 +108,120 @@ body {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-section .hero-content {
+    max-width: 50%;
+}
+
+.hero-section .hero-content h2 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.hero-section .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #dddddd;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.hero-section .hero-content .hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff4081;
+    color: #ffffff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-section .hero-content .hero-button:hover {
+    background-color: #ffeb3b;
+    transform: translateY(-2px);
+}
+
+.hero-section .hero-image img {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero-section .hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Events Section */
+.events-section {
+    padding: 100px 0;
+    background-color: #242424;
+}
+
+.events-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.events-section .event-category {
+    margin-bottom: 50px;
+}
+
+.events-section .event-category h3 {
+    font-size: 2rem;
+    color: #ff4081;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.events-section .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.events-section .event-card {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+    min-width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.events-section .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.events-section .event-card h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.events-section .event-card p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
