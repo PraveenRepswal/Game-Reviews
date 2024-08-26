@@ -1,724 +1,91 @@
-body, h1, h2, h3, h4, p, ul, li, nav, a, header, main, footer {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #f4f4f4;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ffcc00;
-}
-
-main {
-    padding: 40px 20px;
+.container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffcc00;
-    padding-bottom: 10px;
+.main-header {
+    background: linear-gradient(90deg, #000428, #004e92);
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
 }
 
-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #ffcc00;
+.main-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: color 0.3s ease-in-out;
 }
 
-section div {
-    margin-bottom: 40px;
+.main-header h1:hover {
+    color: #1db954;
 }
 
-section ul {
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav ul {
     list-style: none;
-    padding-left: 20px;
-}
-
-section ul li {
-    background-color: #2e2e2e;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-left: 5px solid #ffcc00;
-    transition: transform 0.3s;
-}
-
-section ul li:hover {
-    transform: translateX(10px);
-}
-
-section ul li h4 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-    color: #ffcc00;
-}
-
-section ul li p {
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: #ccc;
-}
-
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    color: #ccc;
-    font-size: 1rem;
-}
-
-/* footer p a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 10px;
-} */
-
-footer p a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin-bottom: 10px;
-    }
-
-    main {
-        padding: 20px 10px;
-    }
-
-    section h2 {
-        font-size: 1.7rem;
-    }
-
-    section h3 {
-        font-size: 1.3rem;
-    }
-
-    section ul li {
-        padding: 10px;
-    }
-
-    section ul li h4 {
-        font-size: 1.2rem;
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    main {
-        padding: 15px 5px;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section h3 {
-        font-size: 1.2rem;
-    }
-
-    section ul li h4 {
-        font-size: 1.1rem;
-    }
-}
-
-header {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-header nav ul li {
-    position: relative;
-}
-
-header nav ul li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffcc00;
-    transition: width 0.3s;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-}
-
-header {
-    background-color: #282828;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.7rem;
-    margin-bottom: 15px;
-}
-
-header nav ul li a:hover::after {
-    width: 100%;
-}
-
-main {
-    background-color: #252525;
-    border-radius: 8px;
-    padding: 40px;
-}
-
-section ul li {
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-section h3 {
-    position: relative;
-}
-
-section h3::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 50px;
-    height: 4px;
-    background-color: #ffcc00;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer p:last-child {
-    margin-bottom: 0;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-}
-
-header nav ul li:hover {
-    background-color: #444;
-    border-radius: 5px;
-}
-section ul li h4 {
-    position: relative;
-    padding-left: 20px;
-}
-
-section ul li h4::before {
-    content: '🎮';
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 1.2rem;
-}
-
-section ul li h4:hover {
-    text-decoration: underline;
-}
-
-main {
-    background-image: linear-gradient(135deg, #222 25%, #1e1e1e 75%);
-}
-
-header {
-    background-image: linear-gradient(135deg, #3a3a3a 25%, #333 75%);
-}
-
-footer {
-    background-image: linear-gradient(135deg, #3a3a3a 25%, #333 75%);
-}
-
-header h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-section h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-section ul li h4 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-header nav ul li a {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-header nav ul li a:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-section ul li p {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-footer p a {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-section ul li:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transform: translateX(15px);
-}
-
-header nav ul li a {
-    padding: 12px 18px;
-    border-radius: 3px;
-}
-
-section ul li {
-    padding: 20px;
-}
-
-footer p a {
-    font-size: 1.1rem;
-}
-
-main {
-    border: 2px solid #ffcc00;
-}
-
-header nav ul li a:hover {
-    border-bottom: 2px solid #ffcc00;
-}
-
-section h2 {
-    padding-left: 10px;
-    border-left: 5px solid #ffcc00;
-}
-
-section h3 {
-    padding-left: 8px;
-    border-left: 4px solid #ffcc00;
-}
-
-footer p a:hover {
-    border-bottom: 2px solid #ffcc00;
-}
-
-section ul li {
-    padding: 25px;
-}
-
-header h1 {
-    padding: 10px 0;
-}
-
-header nav ul li a {
-    padding: 15px 20px;
-}
-
-header nav ul {
+    display: flex;
     gap: 20px;
 }
 
-main {
-    margin-top: 30px;
-}
-
-header {
-    padding-top: 30px;
-}
-
-footer {
-    padding-top: 30px;
-}
-
-header h1 {
-    font-size: 2.7rem;
-}
-
-section h2 {
-    font-size: 2.1rem;
-}
-
-section h3 {
-    font-size: 1.6rem;
-}
-
-section ul li h4 {
-    font-size: 1.35rem;
-}
-
-section ul li p {
-    font-size: 1.05rem;
-}
-
-footer p {
-    font-size: 1.05rem;
-}
-
-footer p a {
-    font-size: 1.15rem;
-}
-footer p a:hover {
-    border-bottom: 3px solid #ffcc00;
-}
-
-section ul li:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-header nav ul li a {
-    padding: 17px 22px;
-}
-
-main {
-    margin-top: 35px;
-}
-
-header {
-    padding-top: 35px;
-}
-
-footer {
-    padding-top: 35px;
-}
-
-header h1 {
-    font-size: 2.9rem;
-}
-
-section h2 {
-    font-size: 2.2rem;
-}
-
-section h3 {
-    font-size: 1.7rem;
-}
-
-/* section h3 {
-    padding-left: 8px;
-    border-left: 4px solid #ffcc00;
-} */
-
-section ul li h4 {
-    font-size: 1.4rem;
-}
-
-footer p a:hover {
-    border-bottom: 3px solid #ffcc00;
-}
-
-section ul li:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-header nav ul li a {
-    padding: 17px 22px;
-}
-
-main {
-    margin-top: 35px;
-}
-
-header {
-    padding-top: 35px;
-}
-
-footer {
-    padding-top: 35px;
-}
-
-header h1 {
-    font-size: 2.9rem;
-}
-
-section h2 {
-    font-size: 2.2rem;
-}
-
-section h3 {
-    font-size: 1.7rem;
-}
-
-section ul li h4 {
-    font-size: 1.4rem;
-}
-
-section ul li p {
+.main-nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
     font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
-footer p {
-    font-size: 1.1rem;
+.main-nav ul li a:hover {
+    background: #1db954;
 }
 
-footer p a {
-    font-size: 1.2rem;
+.header-cta {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
-footer p a:hover {
-    border-bottom: 4px solid #ffcc00;
+.cta-button {
+    background: linear-gradient(45deg, #ff6f61, #d34836);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-section ul li:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-header nav ul li a {
-    padding: 19px 24px;
-}
-
-main {
-    margin-top: 40px;
-}
-
-header {
-    padding-top: 40px;
-}
-
-footer {
-    padding-top: 40px;
-}
-
-header h1 {
-    font-size: 3rem;
-}
-
-section h2 {
-    font-size: 2.3rem;
-}
-
-section h3 {
-    font-size: 1.8rem;
-}
-
-section ul li h4 {
-    font-size: 1.45rem;
-}
-
-/* There is some chance that few lines or a few code block may get repeated in game_events.css because I am working in another file and at the end of 1 hr I paste the code written by me in that file to this file. */
-
-section ul li p {
-    font-size: 1.15rem;
-}
-
-footer p {
-    font-size: 1.15rem;
-}
-
-footer p a {
-    font-size: 1.25rem;
-}
-
-footer p a:hover {
-    border-bottom: 5px solid #ffcc00;
-}
-
-section ul li:hover {
-    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.7);
-}
-
-header nav ul li a {
-    padding: 21px 26px;
-}
-
-main {
-    margin-top: 45px;
-}
-
-header {
-    padding-top: 45px;
-}
-
-footer {
-    padding-top: 45px;
-}
-
-header h1 {
-    font-size: 3.1rem;
-}
-
-section h2 {
-    font-size: 2.4rem;
-}
-
-section h3 {
-    font-size: 1.9rem;
-}
-
-section ul li h4 {
-    font-size: 1.5rem;
-}
-
-section ul li p {
-    font-size: 1.2rem;
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
-footer p a {
-    font-size: 1.3rem;
-}
-
-footer p a:hover {
-    border-bottom: 6px solid #ffcc00;
-}
-
-section ul li:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-}
-
-header nav ul li a {
-    padding: 23px 28px;
-}
-
-main {
-    margin-top: 50px;
-}
-
-header {
-    padding-top: 50px;
-}
-
-footer {
-    padding-top: 50px;
-}
-
-header h1 {
-    font-size: 3.3rem;
-}
-
-section h2 {
-    font-size: 2.5rem;
-}
-
-section h3 {
-    font-size: 2rem;
-}
-
-section ul li h4 {
-    font-size: 1.55rem;
-}
-
-section ul li p {
-    font-size: 1.25rem;
-}
-
-footer p {
-    font-size: 1.25rem;
-}
-
-footer p a {
-    font-size: 1.35rem;
-}
-
-footer p a:hover {
-    border-bottom: 7px solid #ffcc00;
-}
-
-section ul li:hover {
-    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.9);
-}
-
-header nav ul li a {
-    padding: 25px 30px;
-}
-
-main {
-    margin-top: 55px;
-}
-
-header {
-    padding-top: 55px;
-}
-
-footer {
-    padding-top: 55px;
-}
-
-header h1 {
-    font-size: 3.5rem;
-}
-
-section h2 {
-    font-size: 2.6rem;
-}
-
-section h3 {
-    font-size: 2.1rem;
-}
-
-section ul li h4 {
-    font-size: 1.6rem;
-}
-
-section ul li p {
-    font-size: 1.3rem;
-}
-
-footer p {
-    font-size: 1.3rem;
-}
-
-footer p a {
-    font-size: 1.4rem;
-}
-
-footer p a:hover {
-    border-bottom: 8px solid #ffcc00;
-}
-
-section ul li:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-}
-
-header nav ul li a {
-    padding: 27px 32px;
+.cta-button:hover {
+    background: #1db954;
+    transform: scale(1.1);
 }
