@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Reviews</title>
-    <link rel="stylesheet" href="game_reviews.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="container">
             <div class="logo">
                 <h1><a href="index.html">Game Reviews</a></h1>
             </div>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <span class="burger"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#reviews">Reviews</a></li>
@@ -24,36 +29,41 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <header id="home" class="hero">
         <div class="container">
-            <h2>Welcome to Game Reviews</h2>
-            <p>Your source for the latest game reviews and ratings. Discover the best games across all platforms.</p>
+            <div class="hero-content">
+                <h2>Welcome to Game Reviews</h2>
+                <p>Your source for the latest game reviews and ratings. Discover the best games across all platforms.</p>
+                <a href="#reviews" class="button">Explore Reviews</a>
+            </div>
         </div>
-    </section>
+    </header>
 
     <section id="reviews" class="featured-reviews">
         <div class="container">
             <h2>Featured Reviews</h2>
-            <div class="review">
-                <div class="review-content">
-                    <h3>The Legend of Zelda: Breath of the Wild</h3>
-                    <p>An open-world action-adventure game that redefines the genre. Explore the vast kingdom of Hyrule in this critically acclaimed masterpiece.</p>
-                    <p><strong>Rating:</strong> 10/10</p>
-                </div>
-            </div>
-            <div class="review">
-                <div class="review-content">
-                    <h3>God of War</h3>
-                    <p>Join Kratos and his son Atreus on an epic journey through Norse mythology. Stunning visuals and a compelling story make this a must-play.</p>
-                    <p><strong>Rating:</strong> 9.5/10</p>
-                </div>
-            </div>
-            <div class="review">
-                <div class="review-content">
-                    <h3>Red Dead Redemption 2</h3>
-                    <p>Experience the American frontier like never before. A sprawling, detailed world filled with adventure, crime, and intrigue.</p>
-                    <p><strong>Rating:</strong> 9/10</p>
-                </div>
+            <div class="review-grid">
+                <article class="review">
+                    <div class="review-content">
+                        <h3>The Legend of Zelda: Breath of the Wild</h3>
+                        <p>An open-world action-adventure game that redefines the genre. Explore the vast kingdom of Hyrule in this critically acclaimed masterpiece.</p>
+                        <p><strong>Rating:</strong> 10/10</p>
+                    </div>
+                </article>
+                <article class="review">
+                    <div class="review-content">
+                        <h3>God of War</h3>
+                        <p>Join Kratos and his son Atreus on an epic journey through Norse mythology. Stunning visuals and a compelling story make this a must-play.</p>
+                        <p><strong>Rating:</strong> 9.5/10</p>
+                    </div>
+                </article>
+                <article class="review">
+                    <div class="review-content">
+                        <h3>Red Dead Redemption 2</h3>
+                        <p>Experience the American frontier like never before. A sprawling, detailed world filled with adventure, crime, and intrigue.</p>
+                        <p><strong>Rating:</strong> 9/10</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -61,19 +71,21 @@
     <section id="latest-reviews" class="latest-reviews">
         <div class="container">
             <h2>Latest Reviews</h2>
-            <div class="review">
-                <div class="review-content">
-                    <h3>The Last of Us Part II</h3>
-                    <p>A story-driven action-adventure game with breathtaking visuals and a gripping narrative. Follow Ellie as she navigates a post-apocalyptic world.</p>
-                    <p><strong>Rating:</strong> 9.8/10</p>
-                </div>
-            </div>
-            <div class="review">
-                <div class="review-content">
-                    <h3>Cyberpunk 2077</h3>
-                    <p>An open-world RPG set in a futuristic dystopian world. Customize your character and make choices that shape your story.</p>
-                    <p><strong>Rating:</strong> 8.5/10</p>
-                </div>
+            <div class="review-grid">
+                <article class="review">
+                    <div class="review-content">
+                        <h3>The Last of Us Part II</h3>
+                        <p>A story-driven action-adventure game with breathtaking visuals and a gripping narrative. Follow Ellie as she navigates a post-apocalyptic world.</p>
+                        <p><strong>Rating:</strong> 9.8/10</p>
+                    </div>
+                </article>
+                <article class="review">
+                    <div class="review-content">
+                        <h3>Cyberpunk 2077</h3>
+                        <p>An open-world RPG set in a futuristic dystopian world. Customize your character and make choices that shape your story.</p>
+                        <p><strong>Rating:</strong> 8.5/10</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -81,20 +93,22 @@
     <section id="blog" class="blog">
         <div class="container">
             <h2>Latest Blog Posts</h2>
-            <div class="blog-post">
-                <h3>Top 10 Games of 2024</h3>
-                <p>Discover the top 10 games of 2024 that you must play. From action-packed adventures to captivating RPGs, these games have set the standard for the year.</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="blog-post">
-                <h3>Upcoming Game Releases</h3>
-                <p>Stay ahead of the curve with our comprehensive guide to the most anticipated game releases. Find out what's coming soon and get ready to mark your calendar.</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="blog-post">
-                <h3>Behind the Scenes: Game Development</h3>
-                <p>Get an exclusive look at the game development process from concept to release. Learn about the challenges and triumphs developers face along the way.</p>
-                <a href="#">Read More</a>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <h3>Top 10 Games of 2024</h3>
+                    <p>Discover the top 10 games of 2024 that you must play. From action-packed adventures to captivating RPGs, these games have set the standard for the year.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Upcoming Game Releases</h3>
+                    <p>Stay ahead of the curve with our comprehensive guide to the most anticipated game releases. Find out what's coming soon and get ready to mark your calendar.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Behind the Scenes: Game Development</h3>
+                    <p>Get an exclusive look at the game development process from concept to release. Learn about the challenges and triumphs developers face along the way.</p>
+                    <a href="#">Read More</a>
+                </article>
             </div>
             <a href="blogs.html" class="button">Read All Blogs</a>
         </div>
@@ -104,15 +118,15 @@
         <div class="container">
             <h2>What Our Users Say</h2>
             <div class="testimonial-carousel">
-                <div class="testimonial">
-                    <p>"Game Reviews has the most comprehensive and unbiased reviews. I never buy a game without checking their site first!" - Alex P.</p>
-                </div>
-                <div class="testimonial">
-                    <p>"As a gamer, I love the detailed reviews and ratings. Game Reviews is my go-to site for all things gaming." - Jamie L.</p>
-                </div>
-                <div class="testimonial">
-                    <p>"The best place for game reviews! The insights and detailed analysis help me make informed decisions." - Taylor K.</p>
-                </div>
+                <article class="testimonial">
+                    <p>"Game Reviews has the most comprehensive and unbiased reviews. I never buy a game without checking their site first!" - Billu Bhai</p>
+                </article>
+                <article class="testimonial">
+                    <p>"As a gamer, I love the detailed reviews and ratings. Game Reviews is my go-to site for all things gaming." - Billu</p>
+                </article>
+                <article class="testimonial">
+                    <p>"The best place for game reviews! The insights and detailed analysis help me make informed decisions." - Billu bhai</p>
+                </article>
             </div>
             <a href="testimonials.html" class="button">All Testimonials</a>
         </div>
@@ -122,23 +136,22 @@
         <div class="container">
             <h2>About Us</h2>
             <p>Game Reviews is your ultimate destination for unbiased, in-depth reviews of the latest and greatest games. Our team of passionate gamers provides comprehensive insights to help you make informed decisions on what to play next. From AAA titles to indie gems, we've got you covered.</p>
-            <div class="team">
-                <h3>Meet the Team</h3>
-                <div class="team-member">
-                    <h4>John Doe</h4>
+            <div class="team-grid">
+                <article class="team-member">
+                    <h3>Prateek Kumar</h3>
                     <p>Editor-in-Chief</p>
                     <p>John has over 15 years of experience in the gaming industry and leads our team with a wealth of knowledge and passion for games.</p>
-                </div>
-                <div class="team-member">
-                    <h4>Jane Smith</h4>
+                </article>
+                <article class="team-member">
+                    <h3>Prerna</h3>
                     <p>Senior Reviewer</p>
                     <p>Jane specializes in RPGs and strategy games. She brings detailed analysis and a critical eye to all her reviews.</p>
-                </div>
-                <div class="team-member">
-                    <h4>Mike Johnson</h4>
+                </article>
+                <article class="team-member">
+                    <h3>Mike Bhai</h3>
                     <p>Content Creator</p>
                     <p>Mike creates engaging video content and reviews. His dynamic personality and in-depth knowledge make him a favorite among our audience.</p>
-                </div>
+                </article>
             </div>
             <a href="about.html" class="button">Details</a>
         </div>
@@ -163,4 +176,5 @@
         </div>
     </footer>
 </body>
+
 </html>
