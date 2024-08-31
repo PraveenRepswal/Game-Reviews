@@ -206,3 +206,93 @@ h1, h2, h3 {
     padding: 20px;
     transition: background 0.3s ease;
 }
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    line-height: 1.6;
+}
+
+.blog-post a {
+    color: #ffcc66;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    background: #fff;
+    color: #da1b60;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background: #da1b60;
+    color: white;
+}
+
+.testimonials {
+    padding: 50px 0;
+    background: #f4f4f4;
+    color: #444;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #444;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.testimonial {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    line-height: 1.6;
+    font-style: italic;
+}
+
+
+.about-us {
+    padding: 50px 0;
+    background: white;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #444;
+}
+
+.about-us p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
