@@ -95,7 +95,6 @@ nav ul li a:hover {
     border-radius: 15px;
     padding: 30px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -108,4 +107,109 @@ nav ul li a:hover {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
-=
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image span {
+    font-size: 150px;
+    display: block;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Tried to make the profile info box better by putting the emoji on left and the details on just right of emoji but it's not working as expected and the Arcade event is ending very soon so I don't have much time to debug the code */
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.profile-details > div {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-details > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.profile-details h3 {
+    /* color: white; */
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.profile-details ul {
+    list-style: none;
+}
+
+.profile-details ul li {
+    background: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.profile-details ul li:hover {
+    background: var(--primary-color);
+}
+
+
+.bio {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.bio h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.bio p {
+    color: var(--accent-color);
+    line-height: 1.6;
+}
+
+/* Recent Activities Section */
+/* Also remember to modify the gamepass page of Xbox project */
