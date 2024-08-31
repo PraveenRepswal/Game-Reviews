@@ -212,4 +212,117 @@ nav ul li a:hover {
 }
 
 /* Recent Activities Section */
-/* Also remember to modify the gamepass page of Xbox project */
+.recent-activities {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recent-activities:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.recent-activities h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.recent-activities ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.recent-activities ul li {
+    background: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    transition: background 0.3s;
+}
+
+.recent-activities ul li:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.settings-option {
+    margin-bottom: 15px;
+}
+
+.settings-option label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+.settings-option input,
+.settings-option textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: border 0.3s ease;
+}
+
+.settings-option input:focus,
+.settings-option textarea:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+.settings-option button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.settings-option button:hover {
+    background: var(--hover-color);
+    transform: scale(1.02);
+}
+
+.achievements, .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.achievement-item, .badge-item {
+    background: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover, .badge-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.achievement-item span, .badge-item span {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.achievement-item p, .badge-item p {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
