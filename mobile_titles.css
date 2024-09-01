@@ -91,3 +91,138 @@ main {
 main.full-width {
     margin-left: 20px;
 }
+
+.toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-sidebar:hover {
+    background-color: #c0392b;
+}
+
+.game-library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mobile-game-entry {
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mobile-game-entry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-game-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e94560, #0f3460);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.mobile-game-title {
+    font-size: 1.8em;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.mobile-game-description {
+    font-size: 1em;
+    color: #c7c7c7;
+    margin-bottom: 20px;
+}
+
+.mobile-game-tags {
+    font-size: 0.9em;
+    color: #a6a6a6;
+}
+
+.mobile-game-rating span {
+    font-size: 1.2em;
+    color: #f39c12;
+}
+
+.favorite-button {
+    background-color: #e94560;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* animation: alternate; */
+}
+
+.favorite-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+.latest-news {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+
+.latest-news h2 {
+    font-size: 1.8em;
+    color: #e94560;
+    margin-bottom: 20px;
+}
+
+.latest-news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-news ul li {
+    font-size: 1.1em;
+    color: #c7c7c7;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0f3460;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 270px);
+    left: 270px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+footer.full-width {
+    left: 20px;
+    width: calc(100% - 40px);
+}
