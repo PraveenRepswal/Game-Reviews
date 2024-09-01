@@ -88,5 +88,7 @@ Twitter: @xxxxxxxxxxxx
 **Images and Videos of project**
 
 https://github.com/user-attachments/assets/e56ffa2b-1e19-4010-acc6-9da87f6f5fe3
+https://github.com/user-attachments/assets/f8c609d1-be1c-4a61-92c5-f85316e90a53
 
-*More media will be added soon by updating more pages*
+https://github.com/user-attachments/assets/4b5ec108-01ec-40eb-868d-4fe96c1acef8
+*Same image has been used instead of using different images because the Arcade event is about to end and finding different images takes time*
