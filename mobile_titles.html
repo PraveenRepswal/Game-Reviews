@@ -10,10 +10,28 @@
     <header>
         <h1>Ultimate Mobile Game Library</h1>
         <p>Your go-to destination for discovering, rating, and tracking the best mobile games.</p>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                const mainContent = document.querySelector('main');
+                const footer = document.querySelector('footer');
+        
+                sidebar.classList.toggle('hidden');
+                mainContent.classList.toggle('full-width');
+                footer.classList.toggle('full-width');
+            }
+        </script>
+<!-- The JS file is generated using AI -->
+
     </header>
+
+
+    <button onclick="toggleSidebar()">Hide Sidebar</button>
 
     <nav class="sidebar">
         <h2>Filter by Genre</h2>
+        <button onclick="toggleSidebar()">Hide Sidebar</button>
         <ul>
             <li><a href="#action">Action</a></li>
             <li><a href="#adventure">Adventure</a></li>
@@ -82,8 +100,8 @@
             <article class="mobile-game-entry">
                 <div class="mobile-game-circle"></div>
                 <div class="mobile-game-info">
-                    <h2 class="mobile-game-title">PUBG Mobile</h2>
-                    <p class="mobile-game-description">PUBG Mobile delivers classic battle royale on mobile, offering strategic combat in large-scale maps. Players gather resources, craft weapons, and fight to outlast opponents. The game includes multiple modes, regular updates, and a strong community, making it a top mobile shooter.</p>
+                    <h2 class="mobile-game-title">BGMI</h2>
+                    <p class="mobile-game-description">BGMI delivers classic battle royale on mobile, offering strategic combat in large-scale maps. Players gather resources, craft weapons, and fight to outlast opponents. The game includes multiple modes, regular updates, and a strong community, making it a top mobile shooter.</p>
                     <div class="mobile-game-tags">
                         <span>Genre: Shooter</span> | 
                         <span>Platform: iOS, Android</span> |

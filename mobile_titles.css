@@ -1,47 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    transition: margin-left 0.3s ease;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #0f3460;
+    color: #e94560;
     text-align: center;
-    border-bottom: 5px solid #444;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #ecf0f1;
 }
 
 .sidebar {
-    background-color: #f0f0f0;
+    background-color: #16213e;
+    /* color: aliceblue; */
     padding: 20px;
-    border-right: 5px solid #ddd;
-    float: left;
-    width: 20%;
+    width: 250px;
     height: 100vh;
-    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
 }
 
 .sidebar h2 {
-    font-size: 1.5rem;
+    color: #e94560;
+    font-size: 1.8em;
     margin-bottom: 20px;
-    color: #444;
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -50,586 +67,27 @@ header p {
 }
 
 .sidebar ul li a {
-    color: #333;
     text-decoration: none;
-    font-size: 1.1rem;
+    color: #e0e0e0;
+    font-size: 1.2em;
     display: block;
     padding: 10px;
-    border-radius: 5px;
-    background-color: #e0e0e0;
-}
-
-.sidebar ul li a:hover {
-    background-color: #ccc;
-}
-
-main {
-    margin-left: 20%;
-    padding: 20px;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-
-.game-library {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.mobile-game-entry {
-    width: 48%;
-    background-color: #f7f7f7;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-game-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin-right: 20px;
-}
-
-.mobile-game-info {
-    flex-grow: 1;
-}
-
-.mobile-game-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.mobile-game-description {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.mobile-game-tags {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-.mobile-game-rating {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.mobile-game-rating span:last-child {
-    color: #f39c12;
-}
-
-.favorite-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-.favorite-button:hover {
-    background-color: #444;
+.sidebar ul li a:hover {
+    background-color: #0f3460;
 }
 
-.latest-news {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-left: 5px solid #ddd;
-    box-sizing: border-box;
+main {
+    margin-left: 270px;
+    padding: 30px;
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
 }
 
-.latest-news h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #444;
-}
-
-.latest-news ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1rem;
-    color: #555;
-}
-
-.latest-news ul li {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    border-top: 5px solid #444;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 5px solid #ddd;
-    }
-
-    main {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .game-library {
-        flex-direction: column;
-    }
-
-    .mobile-game-entry {
-        width: 100%;
-    }
-
-    .latest-news {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .sidebar h2 {
-        font-size: 1.3rem;
-    }
-
-    .sidebar ul li a {
-        font-size: 1rem;
-    }
-
-    .mobile-game-title {
-        font-size: 1.3rem;
-    }
-
-    .mobile-game-description {
-        font-size: 0.9rem;
-    }
-
-    .favorite-button {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }
-}
-
-.sidebar ul li a.active {
-    background-color: #bbb;
-}
-
-.mobile-game-entry:hover {
-    background-color: #e7e7e7;
-}
-
-.mobile-game-title:hover {
-    color: #555;
-}
-
-.latest-news ul li:hover {
-    color: #333;
-}
-
-.favorite-button.active {
-    background-color: #555;
-}
-
-.sidebar ul li a:active {
-    background-color: #999;
-}
-
-.mobile-game-entry:active {
-    background-color: #ddd;
-}
-
-.favorite-button:active {
-    background-color: #222;
-}
-
-.latest-news h2:active {
-    color: #222;
-}
-
-.latest-news ul li:active {
-    color: #444;
-}
-
-footer a {
-    color: #ccc;
-}
-
-footer a:hover {
-    color: #fff;
-}
-
-footer a:active {
-    color: #aaa;
-}
-
-footer a:visited {
-    color: #bbb;
-}
-
-.sidebar ul li a:visited {
-    color: #666;
-}
-
-.mobile-game-title:visited {
-    color: #444;
-}
-
-.latest-news ul li:visited {
-    color: #666;
-}
-
-.favorite-button:visited {
-    color: #ddd;
-}
-
-footer p:visited {
-    color: #eee;
-}
-
-.sidebar h2:visited {
-    color: #777;
-}
-
-.sidebar ul li a.active:visited {
-    color: #888;
-}
-
-.mobile-game-entry:visited {
-    background-color: #ccc;
-}
-
-.mobile-game-title.active {
-    color: #111;
-}
-
-.sidebar h2.active {
-    color: #222;
-}
-
-.sidebar ul li.active a {
-    background-color: #aaa;
-}
-
-.mobile-game-entry.active {
-    background-color: #999;
-}
-
-.latest-news h2.active {
-    color: #999;
-}
-
-.latest-news ul li.active {
-    color: #555;
-}
-
-footer a.active {
-    color: #888;
-}
-
-footer p.active {
-    color: #ddd;
-}
-
-.sidebar h2:hover {
-    color: #555;
-}
-
-.sidebar ul li.active:hover a {
-    background-color: #bbb;
-}
-
-.sidebar h2:active:hover {
-    color: #333;
-}
-
-.mobile-game-entry.active:hover {
-    background-color: #aaa;
-}
-
-.favorite-button.active:hover {
-    background-color: #333;
-}
-
-footer a.active:hover {
-    color: #ccc;
-}
-
-footer p.active:hover {
-    color: #eee;
-}
-
-.latest-news h2.active:hover {
-    color: #444;
-}
-
-.latest-news ul li.active:hover {
-    color: #666;
-}
-
-.sidebar h2:active:visited {
-    color: #888;
-}
-
-.sidebar ul li.active:visited a {
-    background-color: #bbb;
-}
-
-footer a.active:visited {
-    color: #aaa;
-}
-
-footer p.active:visited {
-    color: #ccc;
-}
-
-.sidebar ul li.active:active a {
-    background-color: #666;
-}
-
-footer a.active:active {
-    color: #444;
-}
-
-footer p.active:active {
-    color: #555;
-}
-
-.latest-news h2.active:active {
-    color: #666;
-}
-
-.latest-news ul li.active:active {
-    color: #777;
-}
-
-.sidebar ul li a:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px #444;
-}
-
-.mobile-game-entry:focus-within {
-    background-color: #eee;
-}
-
-.mobile-game-title:focus {
-    outline: none;
-    text-decoration: underline;
-}
-
-.favorite-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px #444;
-}
-
-.latest-news ul li:focus {
-    outline: none;
-    text-decoration: underline;
-}
-
-footer a:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px #444;
-}
-
-footer p:focus {
-    outline: none;
-    text-decoration: underline;
-}
-
-.sidebar h2:focus {
-    outline: none;
-    text-decoration: underline;
-}
-
-.sidebar ul li a:focus-visible {
-    background-color: #bbb;
-}
-
-.mobile-game-entry:focus-visible {
-    background-color: #e7e7e7;
-}
-
-.mobile-game-title:focus-visible {
-    color: #555;
-}
-
-.latest-news ul li:focus-visible {
-    color: #333;
-}
-
-.favorite-button:focus-visible {
-    background-color: #555;
-}
-
-footer a:focus-visible {
-    color: #aaa;
-}
-
-footer p:focus-visible {
-    color: #ccc;
-}
-
-.sidebar h2:focus-visible {
-    color: #555;
-}
-
-.sidebar ul li a:hover:focus {
-    background-color: #ccc;
-}
-
-.mobile-game-entry:hover:focus-within {
-    background-color: #f0f0f0;
-}
-
-.mobile-game-title:hover:focus {
-    color: #444;
-}
-
-.latest-news ul li:hover:focus {
-    color: #222;
-}
-
-.favorite-button:hover:focus {
-    background-color: #666;
-}
-
-footer a:hover:focus {
-    color: #888;
-}
-
-footer p:hover:focus {
-    color: #ddd;
-}
-
-.sidebar h2:hover:focus {
-    color: #666;
-}
-
-.sidebar ul li a:hover:focus-visible {
-    background-color: #ddd;
-}
-
-.mobile-game-entry:hover:focus-visible {
-    background-color: #e0e0e0;
-}
-
-.mobile-game-title:hover:focus-visible {
-    color: #333;
-}
-
-.latest-news ul li:hover:focus-visible {
-    color: #111;
-}
-
-.favorite-button:hover:focus-visible {
-    background-color: #777;
-}
-
-footer a:hover:focus-visible {
-    color: #777;
-}
-
-footer p:hover:focus-visible {
-    color: #eee;
-}
-
-.sidebar h2:hover:focus-visible {
-    color: #777;
-}
-
-.sidebar ul li a:focus-visible:hover {
-    background-color: #ccc;
-}
-
-.mobile-game-entry:focus-visible:hover {
-    background-color: #d7d7d7;
-}
-
-.mobile-game-title:focus-visible:hover {
-    color: #222;
-}
-
-.latest-news ul li:focus-visible:hover {
-    color: #000;
-}
-
-favorite-button:focus-visible:hover {
-    background-color: #888;
-}
-
-footer a:focus-visible:hover {
-    color: #666;
-}
-
-footer p:focus-visible:hover {
-    color: #ccc;
-}
-
-.sidebar h2:focus-visible:hover {
-    color: #888;
-}
-
-.sidebar ul li a:focus-visible:active {
-    background-color: #bbb;
-}
-
-.mobile-game-entry:focus-visible:active {
-    background-color: #c7c7c7;
-}
-
-.mobile-game-title:focus-visible:active {
-    color: #111;
-}
-
-.latest-news ul li:focus-visible:active {
-    color: #000;
-}
-
-.favorite-button:focus-visible:active {
-    background-color: #999;
-}
-
-footer a:focus-visible:active {
-    color: #555;
-}
-
-footer p:focus-visible:active {
-    color: #bbb;
-}
-
-.sidebar h2:focus-visible:active {
-    color: #999;
+main.full-width {
+    margin-left: 20px;
 }
