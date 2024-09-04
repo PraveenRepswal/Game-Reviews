@@ -1,5 +1,5 @@
 # Game Reviews Website
-Welcome to the Game Reviews website, your destination for the latest game reviews, news, and insights. This website is designed to provide gamers with comprehensive reviews, industry blogs, upcoming game information, and user testimonials, all i one place.
+As the name suggests, you can now access (https://praveenrepswal.github.io/Game-Reviews/) the Game Reviews website to obtain the latest information on the games, news, and details. This website has been designed in such a way that it provides all the necessary information to the players such as reviews, comments, new games details, and, of course, players testimonials.
 
 ## Table of Contents
 - Features
@@ -12,23 +12,23 @@ Welcome to the Game Reviews website, your destination for the latest game review
 - Contact
 
 ## Pages
-1. Home Page: Introduction to the website with featured reviews and latest content.
-2. Game Titles: A section with list of PC and mobile game titles.
-3. Blog: Collection of recent blog posts covering various gaming topics.
-4. Testimonials: Testimonials from users who value our content.
-5. About Us: Information about the team and the mission of Game Reviews.
-6. Game Awards: List of games that have received awards for excellence.
+1. Home Page: It presents the homepage of the website which has the most recent content and some prominent reviews.
+2. Game Titles: In this section, one can find a collection of the PC and mobile game titles.
+3. Blog: It consists of the most recent blog entries covering various aspects of gaming.
+4. Testimonials: Users give back feedback regarding why people appreciate out material.
+5. About Us: Information about the people who work for Game Reviews as well as their objectives.
+6. Game Awards: The best games have been domestically recognized and are listed as award-winning.
 7. Gaming Events Calendar: Schedule of upcoming gaming events categorized by platform.
 8. User Profile: User-specific page for profile management.
 9. Sign Up/Sign In: Authentication page for user registration and login.
 
 ## Features
-- Game Reviews: In-depth reviews for popular games across all platforms.
-- Blog Section: Latest articles and insights on gaming trends, top games, and upcoming releases.
-- User Testimonials: Feedback from our community of gamers.
-- About Us: Information about the team behind the website.
-- Game Awards: Highlights of the best games recognized for their excellence.
-- Gaming Events Calendar: A calendar for upcoming gaming events categorized by PC/Console and Mobile games.
+- Game Reviews: Detailed reviews of popular and trending games on all the platforms.
+- Blog Section: This section consists of articles and blogs related to the latest gaming trends, best games and things to come up.
+- User Testimonials: What gamers think about us.
+- About Us: All the details about the people of this site/company.
+- Game Awards: Winners among the best games are presented.
+- Gaming Events Calendar: It’s a calendar of the future events about games, divided into PC/Console games and Mobile games.
 
 
 ## Technologies Used
@@ -55,11 +55,11 @@ To run the website locally, follow these steps:
 3. Open index.html in your web browser to view the site.
 
 ## Usage
-- Navigation: Use the navigation bar to explore different sections like reviews, blog, testimonials, and more.
-- Review Details: Click on the featured reviews to read detailed reviews.
-- Blogs: Explore the latest blog posts and gaming trends.
+- Navigation: Use the navigation bar to navigate to different sections of website like reviews, blog, testimonials, and more.
+- Review Details: Click on the featured reviews to read detailed reviews of games.
+- Blogs: Explore the latest blog posts and gaming trends details.
 - Testimonials: See what other users say about the site.
-- Game Awards & Events: Stay updated on award-winning games and upcoming events.
+- Game Awards & Events: Stay updated on award-winning games and upcoming events(filtered on the basis of device).
 - Footer Links: Quick access to pages like Game Awards, Game Titles, Mobile Game Titles, Contact Us, and Gaming Events.
 
 
@@ -68,7 +68,8 @@ This project is licensed under the UNKNOWN License. See the LICENSE file for mor
 *License file will be made soon*
 
 ## Contributing
-Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and create a pull request.
+Contributions are appreciated! If you have suggestions or improvements, feel free to fork the repository and create a pull request.
+Geniune pull requests will be merged
 
 ## Contact
 For any questions or feedback, feel free to reach out:
