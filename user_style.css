@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #1db954; /* Green */
-    --secondary-color: #282828; /* Dark Gray */
-    --background-color: Black;
-    --text-color: #e0e0e0; /* Light Gray */
-    --accent-color: White;
-    --hover-color: #1ed760; /* Light Green */
-    --border-color: #1db954; /* Green */
+    --primary-color: #1db954;
+    --secondary-color: #282828;
+    --background-color: black;
+    --text-color: #e0e0e0;
+    --accent-color: white;
+    --hover-color: #1ed760;
+    --border-color: #1db954;
+    --gradient-color: linear-gradient(135deg, #1db954, #1ed760);
 }
-
 
 * {
     margin: 0;
@@ -23,9 +23,9 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
+.container-h, .container-po, .container-pd, .container-b, .container-f, .container-ff {
+    width: 85%;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -34,100 +34,107 @@ h1, h2, h3 {
     color: var(--accent-color);
     text-transform: uppercase;
     margin-bottom: 15px;
-    animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s;
+    transition: color 0.4s ease, text-shadow 0.4s;
 }
 
 a:hover {
     color: var(--hover-color);
-    text-shadow: 1px 1px 2px var(--hover-color);
+    text-shadow: 2px 2px 5px var(--hover-color);
 }
 
 header {
     background: var(--secondary-color);
     padding: 20px 0;
-    box-shadow: 0 4px 6px var(--shadow-color);
-    position: sticky;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* position: sticky; */
     top: 0;
     z-index: 1000;
-    transition: background 0.5s ease;
+    transition: background 0.6s ease;
     margin-bottom: 40px;
-    /* margin: ; */
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-header:hover {
-    background: linear-gradient(135deg, var(--secondary-color), #1b1b1b);
 }
 
 header h1 {
-    font-size: 2.7rem;
-    margin-bottom: 10px;
-    transform: scale(1.05);
-    transition: transform 0.4s ease;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
 }
 
 header h1:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
+}
+
+nav {
+    margin-top: 15px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
 }
 
 nav ul li a {
-    font-size: 1.1rem;
-    padding: 10px 18px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
     border-radius: 30px;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.4s, color 0.4s;
 }
 
 nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
-    box-shadow: 0px 4px 10px var(--shadow-color);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.5);
 }
-
 .profile-overview {
     background: var(--secondary-color);
-    border-radius: 15px;
-    padding: 35px;
+    border-radius: 20px;
+    padding: 40px;
     display: flex;
     align-items: center;
-    gap: 30px;
-    box-shadow: 0 4px 20px var(--shadow-color);
+    gap: 35px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
     margin-bottom: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
-}
-
-.profile-overview:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 10px 35px var(--shadow-color);
-    background: linear-gradient(135deg, var(--secondary-color), #3b3b3b);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.6s ease;
+    flex-direction: row;
 }
 
 .profile-image {
     flex-shrink: 0;
     animation: pulse1 5s infinite;
-    display: flex; */
-    /* justify-content: center;
-    /* align-items: center; */
-    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    /* margin: 2px 2px 2px 2px; */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--background-color);
 }
 
-.profile-image span {
-    font-size: 150px;
-    display: block;
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .profile-info {
@@ -139,278 +146,252 @@ nav ul li a:hover {
 }
 
 .profile-info h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
-    margin-bottom: 12px;
-    transition: color 0.3s ease;
+    margin-bottom: 14px;
+    transition: color 0.4s ease;
 }
 
-.profile-info h2:hover {
-    color: var(--hover-color);
+.profile-info p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
+
 
 .profile-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-
-    margin-top: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .profile-details > div {
     background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.5s;
 }
 
 .profile-details > div:hover {
-    /* transform: translateY(-7px); */
-    box-shadow: 0 8px 25px var(--shadow-color);
-    background: linear-gradient(135deg, var(--secondary-color), #3c3c3c);
+    /* transform: translateY(-10px); */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, var(--secondary-color), #3b3b3b);
 }
 
-.profile-details h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 7px;
+.bio, .skills, .recent-activities, .favorite-games, .goals, .settings, .achievements, .featured-reviews, .portfolio, .friends, .social-links {
+    margin-bottom: 30px;
 }
-
-.bio {
-    background: var(--secondary-color);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s;
-}
-
-.bio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px var(--shadow-color);
-    background: linear-gradient(135deg, var(--secondary-color), #444444);
-}
-
-.bio h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 6px;
-}
-
-.bio p {
-    color: var(--accent-color);
-    line-height: 1.7;
-}
-
-.recent-activities {
-    background: var(--secondary-color);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.favourite-games {
-    background: var(--secondary-color);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.recent-activities:hover {
-    /* transform: translateY(-7px); */
-    box-shadow: 0 8px 25px var(--shadow-color);
-}
-
-.recent-activities h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 6px;
-}
-
-.recent-activities ul li, .favourite-games ul li {
-    background: var(--background-color);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.recent-activities ul li:hover, .favourite-games ul li:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: var(--accent-color);
-}
-
 
 .settings-option {
-    margin-bottom: 20px;
-    animation: fadeIn 0.6s ease-in-out;
-}
-
-.settings-option label {
-    display: block;
-    margin-bottom: 7px;
-    color: var(--accent-color);
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .settings-option input,
-.settings-option textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    background: var(--background-color);
-    color: var(--text-color);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-}
 
-.settings-option input:focus,
-.settings-option textarea:focus {
-    border: 2px solid var(--primary-color);
-    outline: none;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+.settings-option textarea {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: white;
 }
 
 .settings-option button {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
+    background: var(--primary-color);
     color: var(--secondary-color);
-    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: background 0.3s ease;
 }
 
 .settings-option button:hover {
-    background: linear-gradient(135deg, var(--hover-color), var(--primary-color));
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: var(--hover-color);
 }
 
-.achievements, .badges {
+.achievements {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    animation: slideIn 0.7s ease-in-out;
+    gap: 20px;
 }
 
-.achievement-item, .badge-item {
-    background: var(--background-color);
-    padding: 18px;
-    border-radius: 12px;
-    text-align: center;
-    width: 130px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+.achievement-item {
+    display: flex;
+    align-items: center;
+    /* color: white; */
+    gap: 20px;
+    font-size: 1.1rem;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, background 0.5s ease;
+}
+
+.achievement-item:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--secondary-color), #3b3b3b);
 }
 
 .badges {
+
+    background: var(--secondary-color);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badges h3 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.badge-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .badge-item {
-    min-width: 130px;
     text-align: center;
-    flex-shrink: 0;
-    display: inline-block;
+    font-size: 1.2rem;
 }
 
-.achievement-item:hover, .badge-item:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
-    background: linear-gradient(135deg, var(--secondary-color), #333);
+.badge-item span {
+    font-size: 50px;
 }
 
-.achievement-item span, .badge-item span {
-    font-size: 55px;
-    margin-bottom: 12px;
-    display: block;
-    animation: pulse 2s infinite;
+.badge-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
 }
 
-.achievement-item p, .badge-item p {
-    color: var(--accent-color);
-    font-size: 0.95rem;
-    margin-top: 7px;
-}
 
-.social-links ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    justify-content: center;
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-.social-links ul li a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    background: var(--background-color);
-    border: 2px solid var(--primary-color);
-    border-radius: 30px;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-.social-links ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-}
 
 footer {
-    background: var(--secondary-color);
-    padding: 25px 0;
-    text-align: center;
-    margin-top: 50px;
-    border-top: 2px solid var(--primary-color);
-}
-
-footer p {
+    background: var(--background-color);
+    padding: 40px 0;
     color: var(--text-color);
-    font-size: 0.95rem;
-    animation: fadeIn 0.9s ease-in-out;
+    border-top: 1px solid var(--border-color);
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
 }
+
+.footer-links, .footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4, .footer-social h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.4s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--hover-color);
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* align-items: center; */
+}
+
+.footer-social ul li {
+    margin: 0 10px;
+}
+
+.footer-social ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+
+.footer-social ul li a:hover {
+    background-color: #1db954;
+    transform: scale(1.1);
+}
+
+.footer-social ul li a .fab {
+    transition: color 0.3s;
+}
+
+.footer-social ul li a:hover .fab {
+    color: white;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+
 
 @keyframes pulse1 {
-    0%, 100% {
+    0% {
         transform: scale(1);
-        transform-origin: center;
     }
     50% {
-        transform: scale(1.1);
-        transform-origin: center;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
-
 
 @keyframes fadeIn {
     from {
@@ -419,82 +400,4 @@ footer p {
     to {
         opacity: 1;
     }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-    }
-
-    .profile-overview {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-image span {
-        font-size: 120px;
-    }
-
-    .profile-info {
-        margin-left: 0;
-    }
-
-    .profile-details {
-        grid-template-columns: 1fr;
-    }
-
-    .achievements, .badges {
-        justify-content: center;
-    }
-
-    .social-links ul {
-        justify-content: center;
-    }
-}
-
-
-.recent-activities ul li, .favourite-games ul li {
-    background: var(--background-color);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.recent-activities ul li:hover, .favourite-games ul li:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: var(--accent-color);
-}
-
-.favourite-games ul li {
-    background: var(--background-color);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.favourite-games ul li:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: var(--accent-color);
 }
