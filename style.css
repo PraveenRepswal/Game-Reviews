@@ -32,15 +32,6 @@ body.dark-mode button {
     color: #000000;
 }
 
-header.dark-mode,
-footer.dark-mode {
-    background-color: #bfbfbf;
-}
-
-header.dark-mode h1,
-footer.dark-mode h3 {
-    color: black;
-}
 
 body.dark-mode button:hover {
     background-color: #da1b60;

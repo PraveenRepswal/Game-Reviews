@@ -8,10 +8,12 @@
     --border-color: #1db954; /* Green */
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,13 +27,14 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 h1, h2, h3 {
     color: var(--accent-color);
     text-transform: uppercase;
     margin-bottom: 15px;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 p {
@@ -41,34 +44,39 @@ p {
 a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s;
 }
 
 a:hover {
     color: var(--hover-color);
+    text-shadow: 1px 1px 2px var(--hover-color);
 }
 
 header {
     background: var(--secondary-color);
     padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px var(--shadow-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* color: whitesmoke; */
+    transition: background 0.5s ease;
+    margin-bottom: 40px;
+    /* margin: ; */
 }
 
-
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header:hover {
+    background: linear-gradient(135deg, var(--secondary-color), #1b1b1b);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 10px;
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1);
 }
 
 nav ul {
@@ -78,43 +86,48 @@ nav ul {
 }
 
 nav ul li a {
-    font-size: 1rem;
-    padding: 8px 16px;
-    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 10px 18px;
+    border-radius: 30px;
     transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
+    box-shadow: 0px 4px 10px var(--shadow-color);
 }
-
 
 .profile-overview {
     background: var(--secondary-color);
     border-radius: 15px;
-    padding: 30px;
+    padding: 35px;
     display: flex;
     align-items: center;
     gap: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    margin-bottom: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
 }
 
 .profile-overview:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    transform: translateY(-15px);
+    box-shadow: 0 10px 35px var(--shadow-color);
+    background: linear-gradient(135deg, var(--secondary-color), #3b3b3b);
 }
 
 .profile-image {
     flex-shrink: 0;
+    animation: pulse1 5s infinite;
+    display: flex; */
+    /* justify-content: center;
+    /* align-items: center; */
+    /* overflow: hidden; */
 }
 
 .profile-image span {
     font-size: 150px;
     display: block;
-    margin-right: 20px;
 }
 
 .profile-info {
@@ -126,242 +139,306 @@ nav ul li a:hover {
 }
 
 .profile-info h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
 }
 
-.profile-info p {
-    font-size: 1rem;
-    color: var(--text-color);
+.profile-info h2:hover {
+    color: var(--hover-color);
 }
-
-/* Tried to make the profile info box better by putting the emoji on left and the details on just right of emoji but it's not working as expected and the Arcade event is ending very soon so I don't have much time to debug the code */
 
 .profile-details {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 25px;
+
+    margin-top: 0;
 }
 
 .profile-details > div {
     background: var(--secondary-color);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s;
 }
 
 .profile-details > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    /* transform: translateY(-7px); */
+    box-shadow: 0 8px 25px var(--shadow-color);
+    background: linear-gradient(135deg, var(--secondary-color), #3c3c3c);
 }
 
 .profile-details h3 {
-    /* color: white; */
     color: var(--primary-color);
     margin-bottom: 15px;
-    border-bottom: 2px solid var(--primary-color);
-    display: inline-block;
-    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 7px;
 }
-
-.profile-details ul {
-    list-style: none;
-}
-
-.profile-details ul li {
-    background: var(--background-color);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background 0.3s;
-}
-
-.profile-details ul li:hover {
-    background: var(--primary-color);
-}
-
 
 .bio {
     background: var(--secondary-color);
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s;
 }
 
 .bio:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 20px var(--shadow-color);
+    background: linear-gradient(135deg, var(--secondary-color), #444444);
 }
 
 .bio h3 {
     color: var(--primary-color);
     margin-bottom: 15px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 6px;
 }
 
 .bio p {
     color: var(--accent-color);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Recent Activities Section */
 .recent-activities {
     background: var(--secondary-color);
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favourite-games {
+    background: var(--secondary-color);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .recent-activities:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    /* transform: translateY(-7px); */
+    box-shadow: 0 8px 25px var(--shadow-color);
 }
 
 .recent-activities h3 {
     color: var(--primary-color);
     margin-bottom: 15px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 6px;
 }
 
-.recent-activities ul {
-    list-style: none;
-    margin-top: 15px;
-}
-
-.recent-activities ul li {
+.recent-activities ul li, .favourite-games ul li {
     background: var(--background-color);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 8px;
-    transition: background 0.3s;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.recent-activities ul li:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+.recent-activities ul li:hover, .favourite-games ul li:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--accent-color);
 }
+
 
 .settings-option {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.6s ease-in-out;
 }
 
 .settings-option label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     color: var(--accent-color);
+    font-size: 1rem;
 }
 
 .settings-option input,
 .settings-option textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
     background: var(--background-color);
     color: var(--text-color);
-    transition: border 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .settings-option input:focus,
 .settings-option textarea:focus {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     outline: none;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .settings-option button {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border: none;
-    border-radius: 5px;
-    background: var(--primary-color);
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
     color: var(--secondary-color);
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .settings-option button:hover {
-    background: var(--hover-color);
-    transform: scale(1.02);
+    background: linear-gradient(135deg, var(--hover-color), var(--primary-color));
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .achievements, .badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
+    animation: slideIn 0.7s ease-in-out;
 }
 
 .achievement-item, .badge-item {
     background: var(--background-color);
-    padding: 15px;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 12px;
     text-align: center;
-    width: 120px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 130px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.badges {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.badge-item {
+    min-width: 130px;
+    text-align: center;
+    flex-shrink: 0;
+    display: inline-block;
 }
 
 .achievement-item:hover, .badge-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, var(--secondary-color), #333);
 }
 
 .achievement-item span, .badge-item span {
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 55px;
+    margin-bottom: 12px;
     display: block;
+    animation: pulse 2s infinite;
 }
 
 .achievement-item p, .badge-item p {
     color: var(--accent-color);
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 0.95rem;
+    margin-top: 7px;
 }
 
 .social-links ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 18px;
     justify-content: center;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .social-links ul li a {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
+    gap: 10px;
+    padding: 10px 15px;
     background: var(--background-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 25px;
-    transition: background 0.3s, color 0.3s;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .social-links ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 footer {
     background: var(--secondary-color);
-    padding: 20px 0;
+    padding: 25px 0;
     text-align: center;
-    margin-top: 40px;
-    border-top: 1px solid var(--primary-color);
+    margin-top: 50px;
+    border-top: 2px solid var(--primary-color);
 }
 
 footer p {
     color: var(--text-color);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse1 {
+    0%, 100% {
+        transform: scale(1);
+        transform-origin: center;
+    }
+    50% {
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 768px) {
@@ -393,4 +470,31 @@ footer p {
     .social-links ul {
         justify-content: center;
     }
+}
+
+
+.recent-activities ul li, .favourite-games ul li {
+    background: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.recent-activities ul li:hover, .favourite-games ul li:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--accent-color);
+}
+
+.favourite-games ul li {
+    background: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.favourite-games ul li:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--accent-color);
 }
